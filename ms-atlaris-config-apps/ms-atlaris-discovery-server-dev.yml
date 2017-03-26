@@ -1,6 +1,6 @@
 # This default profile is used when running a single instance completely standalone:
 spring:
-  profiles: default
+  profiles: dev
 server:
   port: 8010  
 eureka:
