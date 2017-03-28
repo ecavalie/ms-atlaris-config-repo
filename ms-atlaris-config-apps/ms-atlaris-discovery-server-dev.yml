@@ -1,6 +1,14 @@
-spring:
-  application: 
-    name: ms-atlaris-config-server
+server:
+  port: 8010
+
+eureka:
+  instance:
+    hostname: eurekahost 
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
 logging:  
   file: logs/${spring.application.name}.log
