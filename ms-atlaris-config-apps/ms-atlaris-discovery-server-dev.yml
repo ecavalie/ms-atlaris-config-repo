@@ -1,3 +1,7 @@
+spring:
+  application: 
+    name: ms-atlaris-config-server
+
 logging:  
   file: logs/${spring.application.name}.log
   level:
