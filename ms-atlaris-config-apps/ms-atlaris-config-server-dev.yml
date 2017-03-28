@@ -1,7 +1,4 @@
 ---
-server:
-  port: 8002
-
 logging:  
   file: logs/${spring.application.name}.log
   level:
