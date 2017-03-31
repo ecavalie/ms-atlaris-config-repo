@@ -1,3 +1,6 @@
+server:
+  port: 8012
+  
 logging:  
   file: logs/${spring.application.name}.log
   level:
