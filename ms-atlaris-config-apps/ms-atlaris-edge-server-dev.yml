@@ -8,6 +8,11 @@ zuul:
       path: /pais/**
       stripPrefix: false
 
+eureka:
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
 logging:  
   file: logs/${spring.application.name}.log
   level:
