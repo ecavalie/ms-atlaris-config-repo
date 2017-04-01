@@ -1,6 +1,13 @@
 server:
   port: 8012
-  
+
+zuul:
+  routes:
+    pais:
+      url: http://pais-service:8080
+      path: /pais/**
+      stripPrefix: false
+
 logging:  
   file: logs/${spring.application.name}.log
   level:
