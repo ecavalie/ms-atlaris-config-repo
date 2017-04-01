@@ -8,10 +8,10 @@ zuul:
       path: /pais/**
       stripPrefix: false
 
-eureka:
-  instance:
-    metadataMap:
-      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+eureka:  
+  client:
+    serviceUrl:
+      defaultZone: http://162.243.195.79:8010/eureka/
 
 logging:  
   file: logs/${spring.application.name}.log
