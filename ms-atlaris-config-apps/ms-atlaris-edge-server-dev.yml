@@ -9,7 +9,7 @@ zuul:
       stripPrefix: false
     greetings:
       path: /greeting/**
-      serviceId: GREETING-SERVICE
+      serviceId: ms-atlaris-core-greeting-service
       stripPrefix: false
 
 eureka:  
