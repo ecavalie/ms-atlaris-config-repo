@@ -10,9 +10,8 @@ zuul:
 
 eureka:  
   client:
-    registerWithEureka: false
-      serviceUrl:
-        defaultZone: http://localhost:8010/eureka/
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka/
 
 logging:  
   file: logs/${spring.application.name}.log
