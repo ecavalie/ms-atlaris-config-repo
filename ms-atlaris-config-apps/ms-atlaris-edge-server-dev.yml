@@ -7,6 +7,10 @@ zuul:
       url: http://pais-service:8080
       path: /pais/**
       stripPrefix: false
+    greetings:
+      path: /greeting/**
+      serviceId: GREETING-SERVICE
+      stripPrefix: false
 
 eureka:  
   client:
