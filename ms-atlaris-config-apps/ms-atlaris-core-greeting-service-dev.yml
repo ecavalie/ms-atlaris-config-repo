@@ -1,6 +1,6 @@
 # HTTP Server
 server:
-  port: 0   # HTTP (Tomcat) port
+  port: ${port:8020}   # HTTP (Tomcat) port
 
 # Discovery Server Access
 eureka:
