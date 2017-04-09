@@ -3,6 +3,7 @@ server:
 #  port: ${port:8012}
 
 zuul:
+  ignoredServices: "*"
   routes:
     pais:
       url: http://pais-service:8080
