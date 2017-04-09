@@ -1,5 +1,6 @@
 server:
-  port: ${port:8012}
+  port: 0
+#  port: ${port:8012}
 
 zuul:
   routes:
