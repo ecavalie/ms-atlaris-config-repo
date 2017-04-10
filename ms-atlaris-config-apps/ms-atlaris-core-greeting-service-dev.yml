@@ -6,7 +6,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8010/eureka/
+      defaultZone: http://159.203.137.119:8010/eureka/
 
 
 logging:  
