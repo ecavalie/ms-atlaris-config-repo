@@ -2,4 +2,4 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://162.243.195.79:8010/eureka/
+      defaultZone: http://159.203.137.119/eureka/
