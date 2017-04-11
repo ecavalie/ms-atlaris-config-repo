@@ -1,6 +1,5 @@
 server:
-  port: 0
-#  port: ${port:8012}
+  port: ${port:8012}
 
 zuul:
   ignoredServices: "*"
