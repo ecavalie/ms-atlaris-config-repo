@@ -17,7 +17,7 @@ zuul:
 eureka:  
   client:
     serviceUrl:
-      defaultZone: http://uat.atlaris.com.pe:${port:8010}/eureka/
+      defaultZone: http://localhost:${port:8010}/eureka/
 
 logging:  
   file: logs/${spring.application.name}.log
