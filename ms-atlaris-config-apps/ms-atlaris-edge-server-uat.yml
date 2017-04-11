@@ -1,0 +1,25 @@
+server:
+  port: 0
+
+zuul:
+  ignoredServices: "*"
+  routes:
+    pais:
+      url: http://pais-service:8080
+      path: /pais/**
+      stripPrefix: false
+    greetings:
+      path: /greeting/**
+      serviceId: ms-atlaris-core-greeting-service
+      stripPrefix: false
+
+eureka:  
+  client:
+    serviceUrl:
+      defaultZone: http://uat.atlaris.com.pe:${port:8010}/eureka/
+
+logging:  
+  file: logs/${spring.application.name}.log
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
