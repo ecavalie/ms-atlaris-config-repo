@@ -1,6 +1,13 @@
 server:
   port: ${port:4444}
 
+spring:
+   datasource:
+       driverClassName: org.postgresql.Driver
+       url: jdbc:postgresql://localhost:5432/ubigeo-project
+       username: postgres
+       password: postgres
+
 eureka:  
   client:
     serviceUrl:
