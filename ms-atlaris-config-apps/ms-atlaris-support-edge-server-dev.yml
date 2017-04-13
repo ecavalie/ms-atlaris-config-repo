@@ -13,7 +13,7 @@ zuul:
       serviceId: ms-atlaris-core-greeting-service
       stripPrefix: false
     monedas:
-      path: /moneda/**
+      path: /monedas/**
       url: http://192.168.1.5:4444/moneda
       serviceId: ms-atlaris-core-common-moneda-service
       stripPrefix: false      
