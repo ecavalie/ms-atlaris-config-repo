@@ -14,8 +14,9 @@ zuul:
       stripPrefix: false
     monedas:
       path: /moneda/**
-      url: http://192.168.1.5:4444/
+#      url: http://192.168.1.5:4444/moneda/
 #      serviceId: ms-atlaris-core-common-moneda-service
+      serviceId: UNKNOWN
       stripPrefix: false      
 
 eureka:  
