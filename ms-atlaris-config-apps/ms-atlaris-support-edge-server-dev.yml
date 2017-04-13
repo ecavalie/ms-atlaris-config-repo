@@ -12,6 +12,10 @@ zuul:
       path: /greeting/**
       serviceId: ms-atlaris-core-greeting-service
       stripPrefix: false
+    monedas:
+      path: /moneda/**
+      serviceId: ms-atlaris-core-common-moneda-service
+      stripPrefix: false      
 
 eureka:  
   client:
