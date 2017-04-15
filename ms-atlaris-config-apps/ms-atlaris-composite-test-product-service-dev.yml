@@ -7,7 +7,7 @@ eureka:
     metadataMap:
       instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
-    registryFetchIntervalSeconds: 5
+    registryFetchIntervalSeconds: 10
     serviceUrl:
       defaultZone: http://localhost:${port:8010}/eureka/
 
