@@ -1,19 +1,9 @@
-info:
-  component: Turbine
-
-PREFIX:
-  
-endpoints:
-  restart:
-    enabled: true
-  shutdown:
-    enabled: true
-
 server:
-  port: 8989
+  port: 0
 
-management:
-  port: 8990
+turbine:
+  amqp:
+    port: 8989
    
 logging:  
   file: logs/${spring.application.name}.log
