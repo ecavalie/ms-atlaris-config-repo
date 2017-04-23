@@ -4,6 +4,7 @@ server:
 turbine:
   amqp:
     port: 8989
+
 logging:  
   file: logs/${spring.application.name}.log
   level:
