@@ -5,12 +5,6 @@ turbine:
   amqp:
     port: 8989
 
-logging:  
-  file: logs/${spring.application.name}.log
-  level:
-    com.netflix.discovery: 'OFF'
-    org.springframework.cloud: 'DEBUG'    
-
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
@@ -20,3 +14,11 @@ eureka:
     registryFetchIntervalSeconds: 5
     serviceUrl:
       defaultZone: http://localhost:${port:8010}/eureka/
+
+logging:  
+  file: logs/${spring.application.name}.log
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'    
+
+
