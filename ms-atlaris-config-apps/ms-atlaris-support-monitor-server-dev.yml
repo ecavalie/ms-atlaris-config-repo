@@ -1,6 +1,5 @@
 server:
   port: 8014
-
 turbine:
   amqp:
     port: 8989
